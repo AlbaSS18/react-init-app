@@ -2,6 +2,7 @@ import './App.css';
 import * as React from "react";
 import Pinocho from "./Cartoons/Pinocho";
 import ReyLeon from "./Cartoons/ReyLeon";
+import Cartoon from "./Cartoons/Cartoon";
 
 
 const name = 'Serena';
@@ -32,8 +33,10 @@ function App() {
         <Dumbo/>
         <Bambi/>
 
-        <ReyLeon/>
-        <Pinocho/>
+        <Cartoon name={'Rey León'} year={1940} imageUrl={'https://1.bp.blogspot.com/-OdvUKkNnGOE/XS-UZHYGNYI/AAAAAAAAHD4/NfQj80DHJoQoun3UyUcsJUjIdaw-Ul37QCLcBGAs/s1600/thumb-1920-689000.jpg'}/>
+
+        <Cartoon name={'Pinocho'} year={1994} imageUrl={'https://lamenteesmaravillosa.com/wp-content/uploads/2017/11/pinocho-con-manzana.jpg'}/>
+
     </div>
   );
 }

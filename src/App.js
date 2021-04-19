@@ -1,5 +1,8 @@
 import './App.css';
 import * as React from "react";
+import Pinocho from "./Cartoons/Pinocho";
+import ReyLeon from "./Cartoons/ReyLeon";
+
 
 const name = 'Serena';
 
@@ -28,6 +31,9 @@ function App() {
         <p>Hola {getName() + name}</p>
         <Dumbo/>
         <Bambi/>
+
+        <ReyLeon/>
+        <Pinocho/>
     </div>
   );
 }

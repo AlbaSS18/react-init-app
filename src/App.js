@@ -30,27 +30,39 @@ class Bambi extends React.Component {
     }
 }
 
-function App() {
-  return (
-    <div className="App">
-        <p>Hola {getName() + name}</p>
-        <Dumbo/>
-        <Bambi/>
+class App extends React.Component{
 
-        <Cartoon name={'Rey León'} year={1940} imageUrl={'https://1.bp.blogspot.com/-OdvUKkNnGOE/XS-UZHYGNYI/AAAAAAAAHD4/NfQj80DHJoQoun3UyUcsJUjIdaw-Ul37QCLcBGAs/s1600/thumb-1920-689000.jpg'}/>
+    state = {
+        showComponent: true
+    }
 
-        <Cartoon name={'Pinocho'} year={1994} imageUrl={'https://lamenteesmaravillosa.com/wp-content/uploads/2017/11/pinocho-con-manzana.jpg'}/>
+    toogleComponent = () => {
+        this.setState({showComponent: !this.state.showComponent})
+    }
 
-        <Select/>
+    render() {
+        return (
+            <div className="App">
+                {/*<p>Hola {getName() + name}</p>
+                <Dumbo/>
+                <Bambi/>
 
-        <Input/>
+                <Cartoon name={'Rey León'} year={1940} imageUrl={'https://1.bp.blogspot.com/-OdvUKkNnGOE/XS-UZHYGNYI/AAAAAAAAHD4/NfQj80DHJoQoun3UyUcsJUjIdaw-Ul37QCLcBGAs/s1600/thumb-1920-689000.jpg'}/>
 
-        <Button/>
+                <Cartoon name={'Pinocho'} year={1994} imageUrl={'https://lamenteesmaravillosa.com/wp-content/uploads/2017/11/pinocho-con-manzana.jpg'}/>
 
-        <Counter/>
+                <Select/>*/}
 
-    </div>
-  );
+                {this.state.showComponent ? <Input/>: null}
+                <button onClick={this.toogleComponent}>Click</button>
+
+                {/*<Button/>
+
+                <Counter/>*/}
+
+            </div>
+        );
+    }
 }
 
 export default App;

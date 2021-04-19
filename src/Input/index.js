@@ -6,8 +6,16 @@ class Input extends React.Component {
         message: ''
     }
 
+    interval = null;
+
     componentDidMount() {
         console.log('montado')
+        this.interval = setInterval(() => console.log('hola'),1000)
+    }
+
+    componentWillMount() {
+        console.log('desmontado')
+        clearInterval(this.interval);
     }
 
 

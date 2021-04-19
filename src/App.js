@@ -6,6 +6,7 @@ import Cartoon from "./Cartoons/Cartoon";
 import Select from "./Select";
 import Input from "./Input";
 import Button from "./Button";
+import Counter from "./Counter";
 
 
 const name = 'Serena';
@@ -45,6 +46,8 @@ function App() {
         <Input/>
 
         <Button/>
+
+        <Counter/>
 
     </div>
   );

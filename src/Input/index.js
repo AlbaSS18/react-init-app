@@ -2,13 +2,25 @@ import * as React from "react";
 
 class Input extends React.Component {
 
+    state = {
+        message: ''
+    }
+
+    componentDidMount() {
+        console.log('montado')
+    }
+
+
     handleChange = (event) => {
-        console.log(event.target.value);
+        this.setState({message: event.target.value})
     }
 
     render () {
         return (
-            <input type="text" onChange={this.handleChange}/>
+            <>
+                <h1>{this.state.message}</h1>
+                <input type="text" onChange={this.handleChange}/>
+            </>
         )
     }
 }

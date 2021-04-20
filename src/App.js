@@ -53,11 +53,13 @@ const users = [
 class App extends React.Component{
 
     state = {
-        login: false
+        login: false,
+        name: '',
+        age: 0
     }
 
     componentDidUpdate(prevProps, prevState, snapshot) {
-        console.log(prevProps, prevState);
+        //console.log(prevProps, prevState);
     }
 
     toogleComponent = () => {
@@ -72,7 +74,20 @@ class App extends React.Component{
 
     handleSubmit = (e) => {
         e.preventDefault();
-        console.log('hola!')
+        console.log(this.state)
+    }
+
+
+    handleChange = e => {
+        this.setState({[e.target.name]: e.target.value})
+    }
+
+    handleName = e => {
+        this.setState({name: e.target.value})
+    }
+
+    handleAge = e => {
+        this.setState({age: e.target.value})
     }
 
     render() {
@@ -111,7 +126,11 @@ class App extends React.Component{
                 <form onSubmit={this.handleSubmit}>
                     <label>
                         Name:
-                        <input type="text"/>
+                        <input type="text" name="name" onChange={this.handleChange}/>
+                    </label>
+                    <label>
+                        Age:
+                        <input type="input" name="age" onChange={this.handleChange}/>
                     </label>
                     <input type="submit" value="Submit"/>
                 </form>

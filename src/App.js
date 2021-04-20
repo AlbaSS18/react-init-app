@@ -33,7 +33,7 @@ class Bambi extends React.Component {
 class App extends React.Component{
 
     state = {
-        showComponent: true
+        login: false
     }
 
     componentDidUpdate(prevProps, prevState, snapshot) {
@@ -41,13 +41,19 @@ class App extends React.Component{
     }
 
     toogleComponent = () => {
-        this.setState({showComponent: !this.state.showComponent})
+        this.setState({login: !this.state.login})
+    }
+
+    renderMessage = () => {
+        if(this.state.login)
+            return <p>Bienvenido</p>
+        return <p>No estás logueado</p>
     }
 
     render() {
         return (
             <div className="App">
-                {/*<p>Hola {getName() + name}</p>
+                <p>Hola {getName() + name}</p>
                 <Dumbo/>
                 <Bambi/>
 
@@ -55,14 +61,16 @@ class App extends React.Component{
 
                 <Cartoon name={'Pinocho'} year={1994} imageUrl={'https://lamenteesmaravillosa.com/wp-content/uploads/2017/11/pinocho-con-manzana.jpg'}/>
 
-                <Select/>*/}
+                <Select/>
 
-                {this.state.showComponent && <Input/>}
-                <button onClick={this.toogleComponent}>Click</button>
 
-                {/*<Button/>
+                {this.renderMessage()}
 
-                <Counter/>*/}
+                <button onClick={this.toogleComponent}>Login</button>
+
+                <Button/>
+
+                <Counter/>
 
             </div>
         );

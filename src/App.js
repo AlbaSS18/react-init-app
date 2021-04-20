@@ -32,6 +32,24 @@ class Bambi extends React.Component {
 
 const numbers = [1,2,3,4,5]
 
+const users = [
+    {
+        id: 1,
+        username: 'albass',
+        name: 'Alba'
+    },
+    {
+        id: 2,
+        username: 'mifs',
+        name: 'Miguel'
+    },
+    {
+        id: 3,
+        username: 'jacques',
+        name: 'James'
+    }
+]
+
 class App extends React.Component{
 
     state = {
@@ -75,7 +93,13 @@ class App extends React.Component{
                 <Counter/>
                 <ul>
                     {numbers.map((number, index) => (
-                        <li>{number}</li>
+                        <li key={index}>{number}</li>
+                    ))}
+                </ul>
+
+                <ul>
+                    {users.map((user, index) => (
+                        <li key={user.id}>{user.name} - {user.username}</li>
                     ))}
                 </ul>
 

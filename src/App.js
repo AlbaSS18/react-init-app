@@ -55,7 +55,8 @@ class App extends React.Component{
     state = {
         login: false,
         name: '',
-        age: 0
+        age: 0,
+        description: ''
     }
 
     componentDidUpdate(prevProps, prevState, snapshot) {
@@ -132,6 +133,7 @@ class App extends React.Component{
                         Age:
                         <input type="input" name="age" onChange={this.handleChange}/>
                     </label>
+                    <textarea name="description" onChange={this.handleChange}></textarea>
                     <input type="submit" value="Submit"/>
                 </form>
 

@@ -19,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="74" column="26" selection-start-line="74" selection-start-column="26" selection-end-line="74" selection-end-column="26" />
+            <state relative-caret-position="119">
+              <caret line="58" column="22" selection-start-line="58" selection-start-column="22" selection-end-line="58" selection-end-column="22" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -155,7 +155,7 @@
       <workItem from="1617038066310" duration="989000" />
       <workItem from="1618840274693" duration="5854000" />
       <workItem from="1618865641146" duration="4041000" />
-      <workItem from="1618922691657" duration="3233000" />
+      <workItem from="1618922691657" duration="4015000" />
     </task>
     <task id="LOCAL-00001" summary="Expresiones JSX">
       <created>1618841574673</created>
@@ -262,11 +262,25 @@
       <option name="project" value="LOCAL" />
       <updated>1618930068334</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Formularios: evitar comportamiento por defecto">
+      <created>1618930373955</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1618930373955</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Formularios: Guardando datos en el estado">
+      <created>1618930824621</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1618930824621</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14117000" />
+    <option name="totallyTimeSpent" value="14899000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -320,7 +334,9 @@
     <MESSAGE value="Renderizado condicional" />
     <MESSAGE value="Listas: map" />
     <MESSAGE value="Listas: map con key" />
-    <option name="LAST_COMMIT_MESSAGE" value="Listas: map con key" />
+    <MESSAGE value="Formularios: evitar comportamiento por defecto" />
+    <MESSAGE value="Formularios: Guardando datos en el estado" />
+    <option name="LAST_COMMIT_MESSAGE" value="Formularios: Guardando datos en el estado" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/public/index.html">
@@ -408,8 +424,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="74" column="26" selection-start-line="74" selection-start-column="26" selection-end-line="74" selection-end-column="26" />
+        <state relative-caret-position="119">
+          <caret line="58" column="22" selection-start-line="58" selection-start-column="22" selection-end-line="58" selection-end-column="22" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>

@@ -36,6 +36,10 @@ class App extends React.Component{
         showComponent: true
     }
 
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        console.log(prevProps, prevState);
+    }
+
     toogleComponent = () => {
         this.setState({showComponent: !this.state.showComponent})
     }

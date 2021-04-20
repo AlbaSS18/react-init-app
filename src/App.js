@@ -53,7 +53,7 @@ class App extends React.Component{
 
                 <Select/>*/}
 
-                {this.state.showComponent ? <Input/>: null}
+                {this.state.showComponent && <Input/>}
                 <button onClick={this.toogleComponent}>Click</button>
 
                 {/*<Button/>

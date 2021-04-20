@@ -13,7 +13,7 @@ class Input extends React.Component {
         this.interval = setInterval(() => console.log('hola'),1000)
     }
 
-    componentWillMount() {
+    componentWillUnmount() {
         console.log('desmontado')
         clearInterval(this.interval);
     }

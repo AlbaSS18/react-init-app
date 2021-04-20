@@ -7,6 +7,8 @@ import Select from "./Select";
 import Input from "./Input";
 import Button from "./Button";
 import Counter from "./Counter";
+import ColorPicker from "./ColorPicker";
+import Text from "./Text";
 
 
 const name = 'Serena';
@@ -57,7 +59,8 @@ class App extends React.Component{
         name: '',
         age: 0,
         description: 'Eyy, hola',
-        color: 'orange'
+        color: 'orange',
+        colorPicker: '#c9c9c9'
     }
 
     componentDidUpdate(prevProps, prevState, snapshot) {
@@ -90,6 +93,10 @@ class App extends React.Component{
 
     handleAge = e => {
         this.setState({age: e.target.value})
+    }
+
+    handleColor = e => {
+        this.setState({colorPicker: e.target.value})
     }
 
     render() {
@@ -144,6 +151,8 @@ class App extends React.Component{
                     <input type="submit" value="Submit"/>
                 </form>
 
+                <ColorPicker color={this.state.colorPicker} changeColor={this.handleColor}/>
+                <Text colorSelected={this.state.colorPicker} />
             </div>
         );
     }

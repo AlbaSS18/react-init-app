@@ -30,6 +30,8 @@ class Bambi extends React.Component {
     }
 }
 
+const numbers = [1,2,3,4,5]
+
 class App extends React.Component{
 
     state = {
@@ -71,6 +73,11 @@ class App extends React.Component{
                 <Button/>
 
                 <Counter/>
+                <ul>
+                    {numbers.map((number, index) => (
+                        <li>{number}</li>
+                    ))}
+                </ul>
 
             </div>
         );

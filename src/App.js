@@ -56,7 +56,8 @@ class App extends React.Component{
         login: false,
         name: '',
         age: 0,
-        description: ''
+        description: 'Eyy, hola',
+        color: 'orange'
     }
 
     componentDidUpdate(prevProps, prevState, snapshot) {
@@ -133,7 +134,13 @@ class App extends React.Component{
                         Age:
                         <input type="input" name="age" onChange={this.handleChange}/>
                     </label>
-                    <textarea name="description" onChange={this.handleChange}></textarea>
+                    <textarea value={this.state.description} name="description" onChange={this.handleChange}></textarea>
+                    <select name="color" value={this.state.color} onChange={this.handleChange}>
+                        <option value="red">Red</option>
+                        <option value="orange">Orange</option>
+                        <option value="yellow">Yellow</option>
+                        <option value="blue">Blue</option>
+                    </select>
                     <input type="submit" value="Submit"/>
                 </form>
 

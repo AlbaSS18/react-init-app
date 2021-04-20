@@ -70,6 +70,11 @@ class App extends React.Component{
         return <p>No estás logueado</p>
     }
 
+    handleSubmit = (e) => {
+        e.preventDefault();
+        console.log('hola!')
+    }
+
     render() {
         return (
             <div className="App">
@@ -102,6 +107,14 @@ class App extends React.Component{
                         <li key={user.id}>{user.name} - {user.username}</li>
                     ))}
                 </ul>
+
+                <form onSubmit={this.handleSubmit}>
+                    <label>
+                        Name:
+                        <input type="text"/>
+                    </label>
+                    <input type="submit" value="Submit"/>
+                </form>
 
             </div>
         );

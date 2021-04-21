@@ -1,11 +1,11 @@
 import Text from "./index";
-import {mount} from "enzyme";
+import {mount, render} from "enzyme";
 
 test('Should render without errors',() => {
-    mount(<Text/>)
+    render(<Text/>)
 })
 
 test('Should render an a tag',() => {
-    const wrapper = mount(<Text/>);
+    const wrapper = render(<Text/>);
     expect(wrapper.find('a').length).toBe(1);
 })

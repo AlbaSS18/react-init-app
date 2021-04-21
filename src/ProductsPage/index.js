@@ -1,7 +1,7 @@
 import * as React from "react";
 import {getPriceColor, orderByPrice} from "./helpers";
 
-export default class  ProductsPage extends React.Component{
+export default class ProductsPage extends React.Component{
 
     state = {
         products: [

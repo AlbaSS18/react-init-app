@@ -10,6 +10,7 @@ import Counter from "./Counter";
 import ColorPicker from "./ColorPicker";
 import Text from "./Text";
 import UsersList from "./Users";
+import ProductsPage from "./ProductsPage";
 
 
 const name = 'Serena';
@@ -156,6 +157,9 @@ class App extends React.Component{
                 <Text colorSelected={this.state.colorPicker} />
 
                 <UsersList/>
+
+
+                <ProductsPage/>
             </div>
         );
     }

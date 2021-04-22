@@ -9,10 +9,17 @@ const Counter = () => {
     const [count, setCount] = useState(0)
     const [text, setText] = useState('No ha hecho ninguna acción');
 
+    // ComponentDidMount
     useEffect(() => {
-        console.log('Actualizando')
+        console.log('Montado')
     }, [])
 
+    // ComponentDidUpdate
+    useEffect(() => {
+        console.log('Actualizado')
+    })
+
+    // ComponentWillUnmount
     useEffect(() => {
         return () => {
             console.log('destruido')

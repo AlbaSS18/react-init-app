@@ -12,7 +12,10 @@ import Text from "./Text";
 import UsersList from "./Users";
 import ProductsPage from "./ProductsPage";
 import {useState} from "react";
+import LanguageSelector from "./LanguageSelector";
 
+import LanguageContext from './language.context'
+import MainContainer from './MainContainer'
 
 const name = 'Serena';
 
@@ -172,13 +175,22 @@ const App = () => {
 
     const [showComponent, setShowComponent] = useState(true);
 
+    const [language, setLanguage] = useState('es');
+
     return (
         <div className="App">
             {showComponent && <Counter/>}
             <button onClick={() => setShowComponent(false)}>Toogle</button>
 
             <UsersList/>
+
+            <LanguageContext.Provider value={{language: language, changeLanguage: (language) => {setLanguage(language)}}}>
+                <LanguageSelector changeLanguage={language => setLanguage(language)}/>
+                <MainContainer />
+            </LanguageContext.Provider>
+
         </div>
+
 
 
 

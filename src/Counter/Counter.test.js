@@ -33,5 +33,6 @@ test('Should call to increment when click on button',() => {
 
 test('Should render count',() => {
     const wrapper = mount(<Counter/>)
-    expect(wrapper.find('h1').at(1).text()).toBe('0')
+    expect(wrapper.find('h1').at(1).text()).toBe('0');
+    expect(0).toBe(0)
 })

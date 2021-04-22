@@ -1,38 +1,40 @@
-import * as React from "react";
+import React from "react";
 
 import ButtonCounter from '../ButtonCounter'
 import Title from '../Title'
+import {useState} from "react/cjs/react.production.min";
 
-class Counter extends React.Component {
+const Counter = () => {
 
-    state = {
-        count: 0
+    // Eliminamos el state y lo sustituimos por esto
+    const [count, setCount] = useState(0)
+
+
+    const handleClick = () => {
+        setCount(count + 1)
+        // this.setState(prevState => ({count: prevState.count + 1}));
     }
 
-    handleClick = () => {
-        this.setState(prevState => ({count: prevState.count + 1}));
-    }
+    const handleChange = action => {
+        setCount(action === 'increment' ? count + 1 : count - 1)
 
-    handleChange = action => {
-        this.setState(prevState =>
+        /*this.setState(prevState =>
             ({count: action === 'increment' ? prevState.count + 1 : prevState.count -1})
-        )
+        )*/
     }
 
-    render() {
-        return (
-            <div>
-                <h1>
-                    {this.state.count}
-                </h1>
-                <button onClick={this.handleClick}>Click me</button>
+    return (
+        <div>
+            <h1>
+                {count}
+            </h1>
+            <button onClick={handleClick}>Click me</button>
 
-                <Title text={this.state.count}/>
-                <ButtonCounter onPress={() => this.handleChange ('increment') } label="Increment" />
-                <ButtonCounter onPress={() => this.handleChange ('decrement') }  label="Decrement" />
-            </div>
-        )
-    }
+            <Title text={count}/>
+            <ButtonCounter onPress={() => handleChange ('increment') } label="Increment" />
+            <ButtonCounter onPress={() => handleChange ('decrement') }  label="Decrement" />
+        </div>
+    )
 
 }
 

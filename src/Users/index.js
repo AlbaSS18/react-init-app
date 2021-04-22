@@ -1,22 +1,29 @@
 import * as React from "react";
+import {useState} from "react";
+import {useEffect} from "react";
+import useRequest from "../hooks/useRequest";
 
-class UsersList extends React.Component {
-    state = {
-        users: null
-    }
+const UsersList = () => {
 
-    fetchUsers = async () => {
-        const response = await fetch ('https://jsonplaceholder.typicode.com/users');
-        const data = await  response.json();
-        return data;
-    }
+    const users = useRequest('https://mocki.io/v1/934ead60-e5e3-44ea-8c47-733630e16348');
 
-    async componentDidMount() {
+
+    /*async componentDidMount() {
         const users = await this.fetchUsers();
         this.setState({users});
-    }
+    }*/
+    if(!users)
+        return 'Loading...'
 
-    render () {
+    return (
+        <ul>
+            {users.map(user => (
+                <li key={user.id}>{user.name}</li>
+            ))}
+        </ul>
+    )
+
+    /*render () {
 
         if(!this.state.users)
             return 'Loading...'
@@ -28,7 +35,7 @@ class UsersList extends React.Component {
                 ))}
             </ul>
         )
-    }
+    }*/
 }
 
 export default UsersList;

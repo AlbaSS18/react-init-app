@@ -19,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Counter/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="31" column="41" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
+            <state relative-caret-position="235">
+              <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -172,7 +172,7 @@
       <workItem from="1618954725837" duration="1008000" />
       <workItem from="1619015129101" duration="9777000" />
       <workItem from="1619027210764" duration="81000" />
-      <workItem from="1619103637046" duration="2157000" />
+      <workItem from="1619103637046" duration="2512000" />
     </task>
     <task id="LOCAL-00001" summary="Expresiones JSX">
       <created>1618841574673</created>
@@ -377,11 +377,18 @@
       <option name="project" value="LOCAL" />
       <updated>1619114496127</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="UseState múltiple">
+      <created>1619115120586</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1619115120586</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32153000" />
+    <option name="totallyTimeSpent" value="32508000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -420,7 +427,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Props" />
     <MESSAGE value="Props 2.0" />
     <MESSAGE value="Eventos" />
     <MESSAGE value="Estado parte 1" />
@@ -445,7 +451,8 @@
     <MESSAGE value="Función render" />
     <MESSAGE value="Testear componente de clase" />
     <MESSAGE value="De clases a funciones" />
-    <option name="LAST_COMMIT_MESSAGE" value="De clases a funciones" />
+    <MESSAGE value="UseState múltiple" />
+    <option name="LAST_COMMIT_MESSAGE" value="UseState múltiple" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/public/index.html">
@@ -708,8 +715,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Counter/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="31" column="41" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
+        <state relative-caret-position="235">
+          <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

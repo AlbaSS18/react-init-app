@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 
 import ButtonCounter from '../ButtonCounter'
 import Title from '../Title'
@@ -8,6 +8,14 @@ const Counter = () => {
     // Eliminamos el state y lo sustituimos por esto
     const [count, setCount] = useState(0)
     const [text, setText] = useState('No ha hecho ninguna acción');
+
+    useEffect(() => {
+        console.log('Actualizando')
+    })
+
+    useEffect(() => {
+        console.log('efecto número dos')
+    })
 
 
     const handleClick = () => {

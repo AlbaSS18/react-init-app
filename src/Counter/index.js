@@ -11,12 +11,13 @@ const Counter = () => {
 
     useEffect(() => {
         console.log('Actualizando')
-    })
+    }, [])
 
     useEffect(() => {
-        console.log('efecto número dos')
-    })
-
+        return () => {
+            console.log('destruido')
+        }
+    }, [])
 
     const handleClick = () => {
         setCount(count + 1)

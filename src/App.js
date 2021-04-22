@@ -11,6 +11,7 @@ import ColorPicker from "./ColorPicker";
 import Text from "./Text";
 import UsersList from "./Users";
 import ProductsPage from "./ProductsPage";
+import {useState} from "react";
 
 
 const name = 'Serena';
@@ -54,6 +55,7 @@ const users = [
     }
 ]
 
+/*
 class App extends React.Component{
 
     state = {
@@ -163,6 +165,20 @@ class App extends React.Component{
             </div>
         );
     }
+}
+*/
+
+const App = () => {
+
+    const [showComponent, setShowComponent] = useState(true);
+
+    return (
+        <div className="App">
+            {showComponent && <Counter/>}
+            <button onClick={() => setShowComponent(false)}>Toogle</button>
+        </div>
+
+    )
 }
 
 export default App;

@@ -8,7 +8,7 @@ const Text = props => {
     console.log(context)
 
     return (
-        <p>Hola mundo</p>
+        <p>{context.language === 'es' ? 'Hola mundo!' : 'Hello World!'}</p>
     )
 }
 

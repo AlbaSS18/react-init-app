@@ -16,6 +16,7 @@ import LanguageSelector from "./LanguageSelector";
 
 import LanguageContext from './language.context'
 import MainContainer from './MainContainer'
+import ErrorBoundary from "./ErrorBoundary";
 
 const name = 'Serena';
 
@@ -179,7 +180,10 @@ const App = () => {
 
     return (
         <div className="App">
-            {showComponent && <Counter/>}
+            <ErrorBoundary>
+                {showComponent && <Counter/>}
+            </ErrorBoundary>
+
             <button onClick={() => setShowComponent(false)}>Toogle</button>
 
             <UsersList/>

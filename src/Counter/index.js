@@ -40,6 +40,8 @@ const Counter = () => {
         )*/
     }
 
+    if(count > 1) throw new Error('ooops')
+
     return (
         <div>
             <h1>

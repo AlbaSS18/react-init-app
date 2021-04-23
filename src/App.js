@@ -11,12 +11,13 @@ import ColorPicker from "./ColorPicker";
 import Text from "./Text";
 import UsersList from "./Users";
 import ProductsPage from "./ProductsPage";
-import {useState} from "react";
+import {useState, useRef} from "react";
 import LanguageSelector from "./LanguageSelector";
 
 import LanguageContext from './language.context'
 import MainContainer from './MainContainer'
 import ErrorBoundary from "./ErrorBoundary";
+import Link from "./Link";
 
 const name = 'Serena';
 
@@ -178,8 +179,17 @@ const App = () => {
 
     const [language, setLanguage] = useState('es');
 
+    const name = useRef();
+    const age = useRef();
+
+
+    const sendData = () => {
+        console.log(name.current.value, age.current.value)
+    }
+
     return (
         <div className="App">
+            {/*Gestión de errores*/}
             <ErrorBoundary>
                 {showComponent && <Counter/>}
             </ErrorBoundary>
@@ -188,10 +198,21 @@ const App = () => {
 
             <UsersList/>
 
+            {/*React Context*/}
             <LanguageContext.Provider value={{language: language, changeLanguage: (language) => {setLanguage(language)}}}>
                 <LanguageSelector changeLanguage={language => setLanguage(language)}/>
                 <MainContainer />
             </LanguageContext.Provider>
+
+            {/*Referencias*/}
+            <input ref={name} type="text" />
+            <input ref={age} type="number" />
+            <button onClick={sendData}>Send data</button>
+
+
+            {/*Prototypes*/}
+            <Link label="Ir a google"/>
+
 
         </div>
 

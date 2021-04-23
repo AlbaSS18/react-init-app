@@ -20,6 +20,12 @@ import ErrorBoundary from "./ErrorBoundary";
 import Link from "./Link";
 import ButtonCounter from "./ButtonCounter";
 import TomatoButton from "./TomatoButton";
+import TextStyle from "./TextStyle"
+import  {ThemeProvider} from 'styled-components'
+
+const theme = {
+    main: 'tomato'
+}
 
 const name = 'Serena';
 
@@ -223,6 +229,16 @@ const App = () => {
 
             {/*Extendiendo estilos*/}
             <TomatoButton>Tomato Button</TomatoButton>
+
+            {/*Theming*/}
+            <ThemeProvider theme={theme}>
+                <TomatoButton>Tomato Button</TomatoButton>
+            </ThemeProvider>
+
+            <ThemeProvider theme={theme}>
+                <TextStyle>Hola!</TextStyle>
+            </ThemeProvider>
+
         </div>
 
 

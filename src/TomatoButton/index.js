@@ -13,9 +13,8 @@ const rotate = keyframes`
    }
 `
 const TomatoButton = styled(ButtonCounter)`
-    background-color: tomato;
-    border-color: tomato;
-    animation: ${rotate} 2s linear infinite
+    background-color: ${props => props.theme.main || 'papayawhip'};
+    border-color: ${props => props.theme.main || 'papayawhip'};
 `
 
 

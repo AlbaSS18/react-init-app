@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4bca2e30-f303-411d-85f1-a92a4e82c912" name="Default Changelist" comment="">
+    <list default="true" id="4bca2e30-f303-411d-85f1-a92a4e82c912" name="Default Changelist" comment="Animaciones">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TomatoButton/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/TomatoButton/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -16,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="219" column="26" selection-start-line="219" selection-start-column="26" selection-end-line="219" selection-end-column="26" />
+            <state relative-caret-position="138">
+              <caret line="238" column="32" selection-start-line="238" selection-start-column="32" selection-end-line="238" selection-end-column="32" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -29,21 +30,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ButtonCounter/index.js">
+        <entry file="file://$PROJECT_DIR$/src/TextStyle/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="44" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/TomatoButton/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+            <state relative-caret-position="85">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
               <folding>
-                <element signature="e#0#31#0" expanded="true" />
+                <element signature="e#0#39#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -97,20 +89,21 @@
         <option value="$PROJECT_DIR$/src/hooks/useRequest.js" />
         <option value="$PROJECT_DIR$/src/language.context.js" />
         <option value="$PROJECT_DIR$/src/LanguageSelector/index.js" />
-        <option value="$PROJECT_DIR$/src/TextLanguage/index.js" />
         <option value="$PROJECT_DIR$/src/MainContainer/index.js" />
         <option value="$PROJECT_DIR$/src/SecondaryContainer/index.js" />
         <option value="$PROJECT_DIR$/src/ErrorBoundary/index.js" />
         <option value="$PROJECT_DIR$/src/Link/index.js" />
         <option value="$PROJECT_DIR$/src/Counter/index.js" />
-        <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/ButtonCounter/index.js" />
         <option value="$PROJECT_DIR$/src/TomatoButton/index.js" />
+        <option value="$PROJECT_DIR$/src/TextLanguage/index.js" />
+        <option value="$PROJECT_DIR$/src/TextStyle/index.js" />
+        <option value="$PROJECT_DIR$/src/App.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="808" />
+    <option name="x" value="807" />
     <option name="y" value="36" />
     <option name="width" value="981" />
     <option name="height" value="1032" />
@@ -132,6 +125,18 @@
               <item name="react-init-app" type="b2602c69:ProjectViewProjectNode" />
               <item name="react-init-app" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-init-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-init-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="TextLanguage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-init-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-init-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="TextStyle" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -199,7 +204,8 @@
       <workItem from="1619015129101" duration="9777000" />
       <workItem from="1619027210764" duration="81000" />
       <workItem from="1619103637046" duration="4643000" />
-      <workItem from="1619117979177" duration="13781000" />
+      <workItem from="1619117979177" duration="15855000" />
+      <workItem from="1619211044990" duration="1522000" />
     </task>
     <task id="LOCAL-00001" summary="Expresiones JSX">
       <created>1618841574673</created>
@@ -488,11 +494,18 @@
       <option name="project" value="LOCAL" />
       <updated>1619204543027</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Animaciones">
+      <created>1619204937662</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1619204937662</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48420000" />
+    <option name="totallyTimeSpent" value="52016000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -521,7 +534,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.38188276" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.38010657" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -551,7 +564,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Formularios: Guardando datos en el estado" />
     <MESSAGE value="Formularios: Etiqueta textarea" />
     <MESSAGE value="Formularios: Etiqueta select" />
     <MESSAGE value="Subiendo el estado" />
@@ -576,7 +588,8 @@
     <MESSAGE value="Style-components" />
     <MESSAGE value="Style según props" />
     <MESSAGE value="Extendiendo estilos" />
-    <option name="LAST_COMMIT_MESSAGE" value="Extendiendo estilos" />
+    <MESSAGE value="Animaciones" />
+    <option name="LAST_COMMIT_MESSAGE" value="Animaciones" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/public/index.html">
@@ -696,16 +709,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="41">
           <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Text/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -839,16 +842,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TextLanguage/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/react.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="106">
@@ -932,22 +925,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
+    <entry file="file://$PROJECT_DIR$/src/Text/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="219" column="26" selection-start-line="219" selection-start-column="26" selection-end-line="219" selection-end-column="26" />
+        <state relative-caret-position="102">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
           <folding>
-            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TextLanguage/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TomatoButton/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+        <state relative-caret-position="-119">
+          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TextStyle/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
           <folding>
-            <element signature="e#0#31#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="238" column="32" selection-start-line="238" selection-start-column="32" selection-end-line="238" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -18,6 +18,7 @@ import LanguageContext from './language.context'
 import MainContainer from './MainContainer'
 import ErrorBoundary from "./ErrorBoundary";
 import Link from "./Link";
+import ButtonCounter from "./ButtonCounter";
 
 const name = 'Serena';
 
@@ -212,6 +213,9 @@ const App = () => {
 
             {/*Prototypes*/}
             <Link label="Ir a google"/>
+
+            {/*Style Components*/}
+            <ButtonCounter label="My first button"/>
 
 
         </div>

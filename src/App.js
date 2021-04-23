@@ -215,8 +215,10 @@ const App = () => {
             <Link label="Ir a google"/>
 
             {/*Style Components*/}
-            <ButtonCounter label="My first button"/>
-
+            <ButtonCounter info>My first Component</ButtonCounter>
+            <ButtonCounter warning>My warning Component</ButtonCounter>
+            <ButtonCounter danger>My danger Component</ButtonCounter>
+            <ButtonCounter success>My success Component</ButtonCounter>
 
         </div>
 

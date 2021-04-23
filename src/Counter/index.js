@@ -51,8 +51,8 @@ const Counter = () => {
 
             <Title text={count}/>
             <Title text={text}/>
-            <ButtonCounter onPress={() => handleChange ('increment') } label="Increment" />
-            <ButtonCounter onPress={() => handleChange ('decrement') }  label="Decrement" />
+            <ButtonCounter onClick={() => handleChange ('increment')}>Increment</ButtonCounter>
+            <ButtonCounter onClick={() => handleChange ('decrement')}>Decrement</ButtonCounter>
         </div>
     )
 

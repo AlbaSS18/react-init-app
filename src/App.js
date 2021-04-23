@@ -19,6 +19,7 @@ import MainContainer from './MainContainer'
 import ErrorBoundary from "./ErrorBoundary";
 import Link from "./Link";
 import ButtonCounter from "./ButtonCounter";
+import TomatoButton from "./TomatoButton";
 
 const name = 'Serena';
 
@@ -220,6 +221,8 @@ const App = () => {
             <ButtonCounter danger>My danger Component</ButtonCounter>
             <ButtonCounter success>My success Component</ButtonCounter>
 
+            {/*Extendiendo estilos*/}
+            <TomatoButton>Tomato Button</TomatoButton>
         </div>
 
 
